@@ -1,13 +1,16 @@
 ---
 title: dva如何更好的结合immutable.js？
+tags:
+    - dva
 ---
 
-不用纠结于写大量reducer，又要写大量ui事件回调，线路未免太长了吧，层级过深，而且难以复用性。现在你更贴近于像写vue和ng那样直接操作数据了，(虽然不用redux直接setState也可以=。=)
+不用纠结于写大量reducer，又要写大量ui事件回调，层级过深，而且难以复用。
 
-# dva-atr
-[地址](https://github.com/yangbin1994/dva-atr)
+推荐[dva-atr](https://github.com/yangbin1994/dva-atr)，现在你更贴近于像写vue和ng那样直接操作数据了，(虽然不用redux直接setState也可以=。=)
 
-# 使用
+---
+
+### 安装
 
 ```bash
 $ npm install dva-atr
@@ -23,7 +26,7 @@ import { modelCtr, actionCtrCenter } from 'dva-atr'
 
 
 
-# 创建model
+### 创建model
 
 ```javascript
 
@@ -63,7 +66,7 @@ export default modelCtr(({ actionCtr, actionCtrCenter }) => ({
 }))
 
 ```
-## listen
+#### listen
 
 - listen可以接受一个函数或者数组（默认监听当前namesapce为路由的路径）
 
@@ -75,9 +78,9 @@ export default modelCtr(({ actionCtr, actionCtrCenter }) => ({
  `if (pathname === `/${namespace}`) `
 ```
 
-# 管理组件中使用
+### 管理组件中使用
 
-## actionCtr/reducers
+#### actionCtr/reducers
 
 |名称|说明|
 |-- |-- |
