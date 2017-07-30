@@ -46,7 +46,7 @@ aframe是由[mozilla VR team](https://mozvr.com/)推出的开发webvr的开源�
 ```
 
 ### HTML & Primitives
-Primitives是一种有语义的名称（如<a-box>）,充当复杂，但常见类型的实体的简写。
+Primitives是一种有语义的名称（如`<a-box>`）,充当复杂，但常见类型的实体的简写。
 ```html
 <a-box color="red" width="3"></a-box>
 ```
